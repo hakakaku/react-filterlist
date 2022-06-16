@@ -3,7 +3,7 @@ import Joi from "joi";
 import { useMemo } from "react";
 import useListFilter from "./components/useListFilter";
 import useDataValidate from "./components/useDataValidate";
-import useDataComposition from "./components/useDataComposition";
+import useDataComposite from "./components/useDataComposite";
 
 export default function App() {
   // define test configuration
@@ -37,7 +37,7 @@ export default function App() {
       .required()
   };
 
-  const { data, handleChange, handleComposition } = useDataComposition();
+  const { data, handleChange, handleComposition } = useDataComposite();
 
   // use input data to filter datalist
   const filteredList = useListFilter(
