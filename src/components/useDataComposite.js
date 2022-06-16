@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 // fix the issue with IME composition like Chinese Pinyin or Japanese IME
-function useDataComposition() {
+function useDataComposite() {
   // initiate fixed input data
   const [data, setData] = useState("");
 
@@ -34,4 +34,4 @@ function useDataComposition() {
   return { data, handleChange, handleComposition };
 }
 
-export default useDataComposition;
+export default useDataComposite;
